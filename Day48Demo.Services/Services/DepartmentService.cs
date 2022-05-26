@@ -31,7 +31,7 @@ namespace Day48Demo.Services
                     {
                         while (reader.Read())
                         {
-                            var department = new Department
+                            var department = new Department 
                             {
                                 Id = (int)reader["Id"],
                                 Name = (string)reader["Name"],
@@ -68,7 +68,7 @@ namespace Day48Demo.Services
                         throw new Exception("Add returned 0 rows affected. Expecting 1 rows affected");
                 }
             }
-        }
+        }   
 
         public void Update(Department department)
         {

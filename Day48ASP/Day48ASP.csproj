@@ -70,6 +70,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Departments\DefaultGridView.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView2.aspx" />
+    <Content Include="Pages\UsersData\Create.aspx" />
+    <Content Include="Pages\UsersData\Default.aspx" />
+    <Content Include="Pages\UsersData\Delete.aspx" />
+    <Content Include="Pages\UsersData\Update.aspx" />
     <Content Include="www-resources\css\form.css" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Departments\Create.aspx" />
@@ -96,6 +102,20 @@
     <Compile Include="Pages\Departments\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView.aspx.cs">
+      <DependentUpon>DefaultGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView.aspx.designer.cs">
+      <DependentUpon>DefaultGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView2.aspx.cs">
+      <DependentUpon>DefaultGridView2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView2.aspx.designer.cs">
+      <DependentUpon>DefaultGridView2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Departments\Delete.aspx.cs">
       <DependentUpon>Delete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,6 +128,34 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Departments\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UsersData\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UsersData\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UsersData\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UsersData\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UsersData\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UsersData\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UsersData\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UsersData\Update.aspx.designer.cs">
       <DependentUpon>Update.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,7 +172,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Pages\User\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Day48Demo.Services\Day48Demo.Services.csproj">
