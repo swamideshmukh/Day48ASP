@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Update.aspx.cs" Inherits="Day48ASP.Pages.Departments.Update" %>
+﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Update.aspx.cs" Inherits="Day48ASP.Pages.Departments.Update" %>
 
 <!DOCTYPE html>
 

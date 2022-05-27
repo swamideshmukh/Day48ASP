@@ -61,17 +61,19 @@ namespace Day48ASP.Pages.UsersData
                 LabelStatus.ShowStatusMessage("Id parameter not found!");
             }
         }
-    
+        //var idText = Request.QueryString["id"];
+        //var id = int.Parse(idText);
+
         private void DeleteData()
-        {
+        { 
+            
+            var usersServices = new UsersServices();
             var idText = Request.QueryString["id"];
             var id = int.Parse(idText);
 
-            var usersServices = new UsersServices();
-
             try
             {
-                //usersServices.Delete(id);
+                usersServices.Delete(id);
 
                 LabelStatus.ShowStatusMessage("User record successfully deleted!");
             }

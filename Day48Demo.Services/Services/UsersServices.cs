@@ -99,7 +99,7 @@ namespace Day48Demo.Services.Services
                     command.Parameters.AddWithValue("@LastName", users.LastName);
                     command.Parameters.AddWithValue("@DateOfBirth", users.DateOfBirth);
                     command.Parameters.AddWithValue("@Pan", users.Pan);
-                    command.Parameters.AddWithValue("@Adress", users.Address);
+                    command.Parameters.AddWithValue("@Address", users.Address);
                     command.Parameters.AddWithValue("@Gender", users.Gender);
                     command.Parameters.AddWithValue("@MobileNumber", users.MobileNumber);
                     command.Parameters.AddWithValue("@Email", users.Email);
@@ -114,7 +114,7 @@ namespace Day48Demo.Services.Services
             }
         }
 
-        public void Delete(Users users)
+        public void Delete(int Id)
         {
             using (var connection = new SqlConnection(ConnectionString))
             {
@@ -123,7 +123,7 @@ namespace Day48Demo.Services.Services
                 using (var command = new SqlCommand(cmdText, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@Id", users.Id);
+                    command.Parameters.AddWithValue("@Id", Id);
                    
                     connection.Open();
                     var rowsAffected = command.ExecuteNonQuery();
@@ -153,16 +153,28 @@ namespace Day48Demo.Services.Services
                         {
                             var user = new Users
                             {
+                                //Id = (int)reader["Id"],
+                                //FirstName = (string)reader["FirstName"],
+                                //LastName = (string)reader["LastName"],
+                                //DateOfBirth = (DateTime)reader["DateOfBirth"],
+                                //Pan = (string)reader["Pan"],
+                                //Address = (string)reader["Address"],
+                                //Gender = (string)reader["Gender"],
+                                //MobileNumber = (string)reader["MobileNumber"],
+                                //Email = (string)reader["Email"],
+                                //Comments = (string)reader["Comments"],
+                                //DepartmentRefId = (int)reader["DepartmentRefId"]
+
                                 Id = (int)reader["Id"],
                                 FirstName = (string)reader["FirstName"],
-                                LastName = (string)reader["LastName"],
-                                DateOfBirth = (DateTime)reader["DateOfBirth"],
-                                Pan = (string)reader["Pan"],
-                                Address = (string)reader["Address"],
-                                Gender = (string)reader["Gender"],
-                                MobileNumber = (string)reader["MobileNumber"],
-                                Email = (string)reader["Email"],
-                                Comments = (string)reader["Comments"],
+                                LastName = reader["LastName"].GetData<string>(),
+                                DateOfBirth = reader["DateOfBirth"].GetData<DateTime>(),
+                                Pan = reader["Pan"].GetData<string>(),
+                                Address = reader["Address"].GetData<string>(),
+                                Gender = reader["Gender"].GetData<string>(),
+                                MobileNumber = reader["MobileNumber"].GetData<string>(),
+                                Email = reader["Email"].GetData<string>(),
+                                Comments = reader["Comments"].GetData<string>(),
                                 DepartmentRefId = (int)reader["DepartmentRefId"]
 
 

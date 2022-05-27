@@ -2,15 +2,12 @@
 using Day48Demo.Services.Models;
 using Day48Demo.Services.Utilities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+
+
 
 namespace Day48ASP.Pages.Departments
 {
-    public partial class Update : System.Web.UI.Page
+    public partial class Update : System.Web.UI.Page  
     {
        
             protected void Page_Load(object sender, EventArgs e)
@@ -19,7 +16,7 @@ namespace Day48ASP.Pages.Departments
 
                 ShowDataToUpdate();
             }
-
+        
             protected void ButtonUpdate_Click(object sender, EventArgs e)
             {
                 UpdateData();
@@ -28,7 +25,7 @@ namespace Day48ASP.Pages.Departments
             private void UpdateData()
             {
                 var departmentService = new DepartmentService();
-
+                
                 try
                 {
                     var idText = Request.QueryString["id"];

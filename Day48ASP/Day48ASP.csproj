@@ -72,6 +72,10 @@
   <ItemGroup>
     <Content Include="Pages\Departments\DefaultGridView.aspx" />
     <Content Include="Pages\Departments\DefaultGridView2.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView3.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView4.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView5.aspx" />
+    <Content Include="Pages\Departments\DefaultGridView6.aspx" />
     <Content Include="Pages\UsersData\Create.aspx" />
     <Content Include="Pages\UsersData\Default.aspx" />
     <Content Include="Pages\UsersData\Delete.aspx" />
@@ -115,6 +119,34 @@
     </Compile>
     <Compile Include="Pages\Departments\DefaultGridView2.aspx.designer.cs">
       <DependentUpon>DefaultGridView2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView3.aspx.cs">
+      <DependentUpon>DefaultGridView3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView3.aspx.designer.cs">
+      <DependentUpon>DefaultGridView3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView4.aspx.cs">
+      <DependentUpon>DefaultGridView4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView4.aspx.designer.cs">
+      <DependentUpon>DefaultGridView4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView5.aspx.cs">
+      <DependentUpon>DefaultGridView5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView5.aspx.designer.cs">
+      <DependentUpon>DefaultGridView5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView6.aspx.cs">
+      <DependentUpon>DefaultGridView6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Departments\DefaultGridView6.aspx.designer.cs">
+      <DependentUpon>DefaultGridView6.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Departments\Delete.aspx.cs">
       <DependentUpon>Delete.aspx</DependentUpon>

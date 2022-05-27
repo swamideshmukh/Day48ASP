@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+       <link rel="stylesheet" href="/www-resources/css/form.css" />
 </head>
 <body>
     <h1>Delete </h1>

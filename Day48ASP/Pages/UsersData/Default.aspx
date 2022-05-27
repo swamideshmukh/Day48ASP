@@ -7,11 +7,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+       <link rel="stylesheet" href="/www-resources/css/form.css" />
 </head>
 <body>
      <h1>View All Users</h1>
 
-    <a href="Create.aspx">Add new department</a>
+    <a href="Create.aspx">Add new User</a>
     <br />
     <br />
     <form id="form1" runat="server">
